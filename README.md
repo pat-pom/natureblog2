@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # natureblog
 
 ## Blog dla pasjonatów natury
@@ -10,3 +11,6 @@
 #search
 
 #Structure
+=======
+# natureblog2
+>>>>>>> origin/main
