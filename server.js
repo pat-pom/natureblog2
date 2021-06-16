@@ -36,3 +36,32 @@ mongoClient.connect(url, {}, (error, client) => {
 //=========DB connection======================================  
 
 });
+
+app.get('', checkSignIn, (req, res) => {
+    res.render('index');
+});
+
+//Login page
+app.get('/login', (req, res) => {
+    res.render('sign-in');
+});
+
+//Register page
+app.get('/register', (req, res) => {
+    res.render('sign-up');
+});
+
+//Gallery page
+app.get('/gallery', checkSignIn, (req, res) => {
+    res.render('gallery');
+});
+
+//Blog page
+app.get('/blog', checkSignIn, (req, res) => {
+    res.render('blog');
+});
+
+//Add post page
+app.get('/add',  (req, res) => {
+    res.render('form-post');
+});
